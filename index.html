@@ -1,1 +1,595 @@
-# aaron.github.io
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Roni | Développeur Web & Sécurité</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animation d'introduction -->
+    <div class="intro-animation">
+        <div class="intro-logo">AR</div>
+    </div>
+    
+    <header>
+        <nav>
+            <div class="logo">AR</div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#tarifs">Tarifs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Agent Roni</h1>
+            <h2 class="typing-text"></h2>
+            <p>Spécialiste en solutions Anti-Cheat et Anti-DDoS pour applications web et Garry's Mod</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn primary">Me contacter</a>
+                <a href="#projets" class="btn secondary">Voir mes projets</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="code-container">
+                <div class="code-buttons">
+                    <div class="code-button red"></div>
+                    <div class="code-button orange"></div>
+                    <div class="code-button green"></div>
+                </div>
+                <pre><code>
+function secureConnection(request) {
+    if (detectDDoS(request)) {
+        return blockRequest(request);
+    }
+    
+    if (detectCheat(request.signature)) {
+        return logAndBlock(request);
+    }
+    
+    return processSecurely(request);
+}
+                </code></pre>
+            </div>
+        </div>
+    </section>
+
+    <section id="competences" class="skills">
+        <h2 class="section-title">Mes compétences</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Développement</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="--skill-percent: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="--skill-percent: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-cube"></i>
+                        <span>GLua</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="--skill-percent: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="--skill-percent: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-node-js"></i>
+                        <span>Node.js</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="--skill-percent: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-csharp-plain"></i>
+                        <span>C#</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="--skill-percent: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Sécurité & Protection</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Anti-DDoS</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="--skill-percent: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-gamepad"></i>
+                        <span>Anti-Cheat</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="--skill-percent: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-key"></i>
+                        <span>Cryptographie</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="--skill-percent: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-network-wired"></i>
+                        <span>Sécurité réseau</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="--skill-percent: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i>
+                        <span>Analyse de code</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="--skill-percent: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-cplusplus-plain"></i>
+                        <span>C++</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="--skill-percent: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets" class="projects">
+        <h2 class="section-title">Projets réalisés</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('https://via.placeholder.com/400x250?text=GameShield')"></div>
+                <div class="project-content">
+                    <h3>GameShield</h3>
+                    <p>Solution anti-cheat pour Garry's Mod installé sur Maquisards DarkRP.</p>
+                    <div class="project-tags">
+                        <span>Lua</span>
+                        <span>C++</span>
+                        <span>Anti-Cheat</span>
+                        <span>Sécurité</span>
+                    </div>
+                    <a href="#" class="btn small">Voir le projet</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('https://via.placeholder.com/400x250?text=DDoS+Guard')"></div>
+                <div class="project-content">
+                    <h3>G-Guard</h3>
+                    <p>Système de protection contre les attaques DDoS de serveurs Garry's Mod.</p>
+                    <div class="project-tags">
+                        <span>Node.js</span>
+                        <span>Lua</span>
+                        <span>C++</span>
+                        <span>Anti-DDoS</span>
+                    </div>
+                    <a href="#" class="btn small">Voir le projet</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('https://via.placeholder.com/400x250?text=SecurePlay')"></div>
+                <div class="project-content">
+                    <h3>Secure G-Play</h3>
+                    <p>Base de données regroupant toutes les nouvelles commandes et exploits pour Garry's Mod, mis à jour toutes les semaines</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Anti-Cheat</span>
+                        <span>Cloud</span>
+                    </div>
+                    <a href="#" class="btn small">Voir le projet</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2 class="section-title">Mes services</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Développement</h3>
+                <p>Création de sites et applications modernes, responsives et sécurisées.</p>
+                <ul>
+                    <li>Sites vitrines</li>
+                    <li>Applications web</li>
+                    <li>Applications de bureau</li>
+                    <li>Pannels de gestion</li>
+                    <li>Interfaces administrateur</li>
+                </ul>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Protection Anti-DDoS</h3>
+                <p>Solutions de protection contre les attaques par déni de service distribué.</p>
+                <ul>
+                    <li>Analyse de trafic</li>
+                    <li>Filtrage intelligent</li>
+                    <li>Mitigation d'attaques</li>
+                    <li>Protection contre les bruteforce</li>
+                    <li>Surveillance 24/7</li>
+                </ul>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <h3>Systèmes Anti-Cheat</h3>
+                <p>Développement de solutions anti-triche pour Garry's Mod.</p>
+                <ul>
+                    <li>Détection de cheats</li>
+                    <li>Protection de code</li>
+                    <li>Vérification d'intégrité</li>
+                    <li>Analyse comportementale</li>
+                    <li>Détection des backdoors</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stats-container">
+            <h2 class="section-title">Résultats prouvés</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="stat-value">
+                        <div class="stat-number" data-count="99.9">0</div>
+                        <div class="stat-suffix">%</div>
+                    </div>
+                    <div class="stat-label">de protection contre les attaques DDoS</div>
+                    <div class="stat-description">Taux de succès pour les systèmes de protection déployés</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="stat-value">
+                        <div class="stat-number" data-count="10000">0</div>
+                        <div class="stat-suffix">+</div>
+                    </div>
+                    <div class="stat-label">attaques bloquées par mois</div>
+                    <div class="stat-description">Sur l'ensemble des infrastructures protégées</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="stat-value">
+                        <div class="stat-number" data-count="98.5">0</div>
+                        <div class="stat-suffix">%</div>
+                    </div>
+                    <div class="stat-label">de détection des cheats</div>
+                    <div class="stat-description">Taux de détection des logiciels de triche</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="stat-value">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-suffix">ms</div>
+                    </div>
+                    <div class="stat-label">de latence maximale</div>
+                    <div class="stat-description">Impact minimal sur les performances</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tarifs" class="pricing">
+        <h2 class="section-title">Tarifs</h2>
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Développement</h3>
+                    <div class="pricing-price">
+                        <span class="price">À partir de 20€</span>
+                    </div>
+                </div>
+                <div class="pricing-features">
+                    <div class="pricing-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Site vitrine responsive</span>
+                    </div>
+                    <div class="pricing-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Optimisation SEO</span>
+                    </div>
+                    <div class="pricing-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Animations</span>
+                    </div>
+                    <div class="pricing-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Maintenance 6 mois</span>
+                    </div>
+                </div>
+                <a href="#contact" class="btn primary">Me contacter</a>
+            </div>
+            
+            <div class="pricing-card featured">
+                <div class="pricing-badge">Populaire</div>
+                <div class="pricing-header">
+                    <h3>Protection Anti&#8209;DDoS</h3>
+                    <div class="pricing-price">
+                        <span class="price">À partir de 40€</span>
+                    </div>
+                </div>
+                <div class="pricing-features">
+                    <div class="pricing-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Analyse de vulnérabilités</span>
+                    </div>
+                    <div class="pricing-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Mise en place de protection</span>
+                    </div>
+                    <div class="pricing-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Surveillance 24/7</span>
+                    </div>
+                    <div class="pricing-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Rapport mensuel</span>
+                    </div>
+                </div>
+                <a href="#contact" class="btn primary">Me contacter</a>
+            </div>
+            
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Systèmes Anti-Cheat</h3>
+                    <div class="pricing-price">
+                        <span class="price">À partir de 30€</span>
+                    </div>
+                </div>
+                <div class="pricing-features">
+                    <div class="pricing-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Développement sur mesure</span>
+                    </div>
+                    <div class="pricing-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Intégration à Garry's Mod</span>
+                    </div>
+                    <div class="pricing-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Mises à jour régulières</span>
+                    </div>
+                    <div class="pricing-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Support technique</span>
+                    </div>
+                </div>
+                <a href="#contact" class="btn primary">Me contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Me contacter</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Informations de contact</h3>
+                <p>N'hésitez pas à me contacter pour discuter de vos projets ou pour toute question.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>aaronzerubia@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Paris, France</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/aaronzerubia" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://discord.com/users/550370739371638794" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a>
+                    <a href="mailto:aaronzerubia@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-logo">AR</div>
+                <div class="footer-tagline">Sécurité & Développement Web</div>
+            </div>
+            
+            <div class="footer-services">
+                <div class="footer-service">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Développement</span>
+                </div>
+                <div class="footer-service">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Protection Anti-DDoS</span>
+                </div>
+                <div class="footer-service">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Systèmes Anti-Cheat</span>
+                </div>
+            </div>
+            
+            <div class="footer-right">
+                <div class="footer-social">
+                    <a href="https://github.com/aaronzerubia" class="footer-social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://discord.com/users/550370739371638794" class="footer-social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a>
+                </div>
+                <div class="footer-links">
+                    <a href="#tarifs">Tarifs</a>
+                </div>
+                <div class="footer-copyright">
+                    &copy; 2023 Agent Roni. Tous droits réservés.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animation de typing alternée
+            const texts = ["Développeur Web", "Expert en Sécurité"];
+            const typingText = document.querySelector('.typing-text');
+            let textIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+            
+            function type() {
+                const currentText = texts[textIndex];
+                
+                if (isDeleting) {
+                    // Effacement
+                    typingText.textContent = currentText.substring(0, charIndex - 1);
+                    charIndex--;
+                } else {
+                    // Écriture
+                    typingText.textContent = currentText.substring(0, charIndex + 1);
+                    charIndex++;
+                }
+                
+                let typeSpeed = isDeleting ? 50 : 100; // Vitesse d'effacement plus rapide
+                
+                if (!isDeleting && charIndex === currentText.length) {
+                    // Fin de l'écriture, attendre avant d'effacer
+                    typeSpeed = 2000; // Pause de 2 secondes
+                    isDeleting = true;
+                } else if (isDeleting && charIndex === 0) {
+                    // Fin de l'effacement, passer au texte suivant
+                    isDeleting = false;
+                    textIndex = (textIndex + 1) % texts.length;
+                    typeSpeed = 500; // Pause avant d'écrire le prochain texte
+                }
+                
+                setTimeout(type, typeSpeed);
+            }
+            
+            // Démarrer l'animation après un court délai
+            setTimeout(type, 500);
+
+            // Animation des barres de compétences au défilement
+            const skillsSection = document.querySelector('.skills');
+            const skillItems = document.querySelectorAll('.skill-item');
+            
+            // Fonction pour vérifier si un élément est visible dans la fenêtre
+            function isElementInViewport(el) {
+                const rect = el.getBoundingClientRect();
+                return (
+                    rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.8
+                );
+            }
+            
+            // Fonction pour animer les compétences
+            function animateSkills() {
+                if (isElementInViewport(skillsSection)) {
+                    skillItems.forEach((item, index) => {
+                        setTimeout(() => {
+                            item.classList.add('animate');
+                            item.style.animationPlayState = 'running';
+                        }, index * 100);
+                    });
+                    window.removeEventListener('scroll', animateSkills);
+                }
+            }
+            
+            // Vérifier au chargement de la page
+            animateSkills();
+            
+            // Ajouter un écouteur d'événement de défilement
+            window.addEventListener('scroll', animateSkills);
+            
+            // Animation des compteurs de statistiques
+            const statsSection = document.querySelector('.stats');
+            const statNumbers = document.querySelectorAll('.stat-number');
+            
+            function animateStats() {
+                if (isElementInViewport(statsSection)) {
+                    statNumbers.forEach(stat => {
+                        const targetValue = parseFloat(stat.getAttribute('data-count'));
+                        const duration = 2000; // 2 secondes
+                        const startTime = Date.now();
+                        const isFloat = targetValue % 1 !== 0;
+                        
+                        function updateCount() {
+                            const currentTime = Date.now();
+                            const progress = Math.min((currentTime - startTime) / duration, 1);
+                            const easeProgress = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+                            const currentValue = targetValue * easeProgress;
+                            
+                            if (isFloat) {
+                                stat.textContent = currentValue.toFixed(1);
+                            } else {
+                                stat.textContent = Math.floor(currentValue);
+                            }
+                            
+                            if (progress < 1) {
+                                requestAnimationFrame(updateCount);
+                            }
+                        }
+                        
+                        updateCount();
+                    });
+                    
+                    window.removeEventListener('scroll', animateStats);
+                }
+            }
+            
+            // Vérifier au chargement de la page
+            animateStats();
+            
+            // Ajouter un écouteur d'événement de défilement
+            window.addEventListener('scroll', animateStats);
+        });
+    </script>
+</body>
+</html> 
